@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- tailwind & daisyUI -->
+    <!-- daisy & tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet">
+
     <title>fruit-burst-with-tailwind-daisyUI</title>
+
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+        .hero{
+            background-image: url('/images/team.png');
+        }
+    </style>
 
     <!-- tailwind custom data -->
     <script>
@@ -16,6 +31,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'nav-color':'#F85559',
                     }
                 }
             }
@@ -23,19 +39,383 @@
     </script>
 </head>
 
+<body class="font-poppins">
 
-<body>
-    <header>
+    <header class="md:container md:mx-auto p-20">
+        <div class="navbar bg-nav-color text-white rounded-full pr-10 mb-12">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end hidden lg:flex w-auto">
+                <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="navbar-center">
+                <img src="./images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case text-4xl font-bold">Fruit Burst</a>
+            </div>
+            <div class="navbar-end">
+                <div class="form-control">
+                    <input type="text" placeholder="Search" class="rounded-full input input-bordered 
+                    w-24 md:w-auto lg:w-96" />
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" 
+                        stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" 
+                        stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- cover photo -->
+        <div>
+            <!-- slider or carousel -->
+            <div class="carousel w-full md:h-[550px] bg-bike-bg">
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative  hero "
+                     style="background-image: url('./images/team.png');">
+    
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-md">
+                            <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your 
+                                <br> doorstep</h2>
+                            <p>We supply highly quality organic products</p>
+                            <button class="btn bg-nav-color text-white">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+    
+                <!-- slide 2 -->
+                <div id="slide1" class="carousel-item relative  hero "
+                style="background-image: url('./images/team.png');">
+    
+               <div class="hero-content text-center text-neutral-content">
+                   <div class="max-w-md">
+                       <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your 
+                           <br> doorstep</h2>
+                       <p>We supply highly quality organic products</p>
+                       <button class="btn bg-nav-color text-white">Shop Now</button>
+                   </div>
+               </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+    
+                <!-- slide 3 -->
+                <div id="slide1" class="carousel-item relative  hero "
+                style="background-image: url('./images/team.png');">
+    
+               <div class="hero-content text-center text-neutral-content">
+                   <div class="max-w-md">
+                       <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your 
+                           <br> doorstep</h2>
+                       <p>We supply highly quality organic products</p>
+                       <button class="btn bg-nav-color text-white">Shop Now</button>
+                   </div>
+               </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+    
+                <!-- slide 4 -->
+                <div id="slide1" class="carousel-item relative  hero "
+                style="background-image: url('./images/team.png');">
+    
+               <div class="hero-content text-center text-neutral-content">
+                   <div class="max-w-md">
+                       <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your 
+                           <br> doorstep</h2>
+                       <p>We supply highly quality organic products</p>
+                       <button class="btn bg-nav-color text-white">Shop Now</button>
+                   </div>
+               </div>
+    
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- overlap -->
+        </div>
 
     </header>
 
-    <main>
+
+    <main class="md:container md:mx-auto p-15">
+
+        
+        <section >
+            
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+    
+
+    
+
+       
+
+
+        <!-- latest bike -->
+        <section class="my-24">
+            <h3 class="text-5xl mb-12 font-semibold text-center">Latest Bikes</h3>
+
+            <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- first card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="./images/others/latest1.png" alt="no image found" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn bg-bike-primary text-white uppercase">Purchase</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="./images/others/latest2.png" alt="no image found" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Motorcycles & Scooters</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-error uppercase">Purchase</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="./images/others/latest3.png" alt="no image found" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">2021 Honda CBR500R</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-error uppercase">Purchase</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- happy clients -->
+        <section class="my-24">
+            <h3 class="text-5xl mb-12 font-semibold text-center">Happy
+                <span class="text-bike-primary">Clients says</span>
+            </h3>
+
+            <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- first happy Clients review -->
+                <div class="card p-9 bg-base-100 border-2 border-gray-200">
+                    <figure><img class="w-40" src="./images/others/user-1.png" alt="no image to show" /></figure>
+                    <div class="card-body">
+                        <p>Slate helps you see how
+                            many more days you need
+                            to work to reach your financial
+                            goal for the month and year.</p>
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center space-y-4 mt-3">
+                            <h4 class="text-sm font-semibold text-info">Regina Miles</h4>
+                            <p>Banker</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second happy Clients review -->
+                <div class="card p-9 bg-base-100 border-2 border-gray-200">
+                    <figure><img class="w-40" src="./images/others/user-2.png" alt="no image to show" /></figure>
+                    <div class="card-body">
+                        <p>Slate helps you see how
+                            many more days you need
+                            to work to reach your financial
+                            goal for the month and year.</p>
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center space-y-4 mt-3">
+                            <h4 class="text-sm font-semibold text-info">Regina Miles</h4>
+                            <p>Banker</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third happy Clients review -->
+                <div class="card p-9 bg-base-100 border-2 border-gray-200">
+                    <figure><img class="w-40" src="./images/others/user-3.png" alt="no image to show" /></figure>
+                    <div class="card-body">
+                        <p>Slate helps you see how
+                            many more days you need
+                            to work to reach your financial
+                            goal for the month and year.</p>
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center space-y-4 mt-3">
+                            <h4 class="text-sm font-semibold text-info">Regina Miles</h4>
+                            <p>Banker</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- faq -->
+        <section class="my-24">
+            <h3 class="text-5xl mb-12 font-semibold text-center">Frequently Asked
+                <span class="text-bike-primary">Questions</span>
+            </h3>
+
+            <div class="hero">
+                <div class="hero-content flex-col lg:flex-row gap-24">
+                    <img src="./images/others/faq.png" class="w-3/4 lg:max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <!-- first question -->
+                        <div class="collapse collapse-arrow border-2 border-zinc-200">
+                            <input type="radio" name="my-accordion-2" checked="checked" />
+                            <div class="collapse-title text-xl font-medium">
+                                What are the most important things I should
+                                know about riding a bike?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
+                                    will help you be a more focused and legally compliant bike rider.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- second question -->
+                        <div class="collapse collapse-arrow border-2 border-zinc-200 mt-2 ">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                How can I tell if my helmet is old and I need a new one?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
+                                    will help you be a more focused and legally compliant bike rider.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 3rd question -->
+                        <div class="collapse collapse-arrow border-2 border-zinc-200 mt-2">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                My bike has been in storage is it safe to ride?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
+                                    will help you be a more focused and legally compliant bike rider.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 4th question -->
+                        <div class="collapse collapse-arrow border-2 border-zinc-200 mt-2">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                What rules should I follow when riding my bike?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
+                                    will help you be a more focused and legally compliant bike rider.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <footer>
-        
+    <footer class="footer p-10 bg-neutral text-white">
+        <div>
+            <div class="flex gap-4 text-base">
+                <p>Download Now</p>
+                <p>License</p>
+            </div>
+
+            <div class="flex gap-4 text-base">
+                <p>About</p>
+                <p>Features</p>
+                <p>Pricing</p>
+                <p>Career</p>
+                <p>Help</p>
+                <p>Privacy Policy</p>
+            </div>
+            <p class="text-sm">© 2020 bike. All rights reserved</p>
+        </div>
+        <div>
+            <span class=" text-lg">Get The App</span>
+            <div class="grid grid-cols-1 gap-4">
+                <img class="w-36" src="./images/others/ios.png" alt="">
+                <img class="w-36" src="./images/others/android.png" alt="">
+            </div>
+        </div>
     </footer>
-    
 </body>
+
 </html>
