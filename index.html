@@ -16,10 +16,11 @@
     <title>fruit-burst-with-tailwind-daisyUI</title>
 
     <style>
-        .font-lato{
+        .font-lato {
             font-family: 'Lato', sans-serif;
         }
-        .hero{
+
+        .hero {
             background-image: url('/images/team.png');
         }
     </style>
@@ -31,7 +32,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'nav-color':'#F85559',
+                        'nav-color': '#F85559',
                     }
                 }
             }
@@ -44,29 +45,34 @@
     <header class="md:container md:mx-auto p-20">
         <div class="navbar bg-nav-color text-white rounded-full pr-10 mb-12">
             <div class="navbar-start">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost btn-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-                </ul>
-              </div>
-              <div class="navbar-end hidden lg:flex w-auto">
-                <ul class="menu menu-horizontal px-1 text-lg font-medium">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-                </ul>
-            </div>
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex w-auto">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="navbar-center">
                 <img src="./images/logo.png" alt="">
-              <a class="btn btn-ghost normal-case text-4xl font-bold">Fruit Burst</a>
+                <a class="btn btn-ghost normal-case text-4xl font-bold">Fruit Burst</a>
             </div>
             <div class="navbar-end">
                 <div class="form-control">
@@ -81,16 +87,17 @@
 
         <!-- cover photo -->
         <div>
-            <!-- slider or carousel -->
+            <!-- slider or carousel 2things need to solve(search icon)-->
             <div class="carousel w-full md:h-[550px] bg-bike-bg">
                 <!-- slide 1 -->
-                <div id="slide1" class="carousel-item relative  hero "
-                     style="background-image: url('./images/team.png');">
-    
+                <div id="slide1" class="carousel-item relative hero brightness-75"
+                    style="background-image: url('./images/team.png');">
+
                     <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-md">
-                            <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your 
-                                <br> doorstep</h2>
+                            <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your
+                                <br> doorstep
+                            </h2>
                             <p>We supply highly quality organic products</p>
                             <button class="btn bg-nav-color text-white">Shop Now</button>
                         </div>
@@ -100,56 +107,59 @@
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-    
+
                 <!-- slide 2 -->
-                <div id="slide1" class="carousel-item relative  hero "
-                style="background-image: url('./images/team.png');">
-    
-               <div class="hero-content text-center text-neutral-content">
-                   <div class="max-w-md">
-                       <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your 
-                           <br> doorstep</h2>
-                       <p>We supply highly quality organic products</p>
-                       <button class="btn bg-nav-color text-white">Shop Now</button>
-                   </div>
-               </div>
+                <div id="slide2" class="carousel-item relative  hero "
+                    style="background-image: url('./images/team.png');">
+
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-md">
+                            <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your
+                                <br> doorstep
+                            </h2>
+                            <p>We supply highly quality organic products</p>
+                            <button class="btn bg-nav-color text-white">check it</button>
+                        </div>
+                    </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle">❮</a>
                         <a href="#slide3" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-    
+
                 <!-- slide 3 -->
-                <div id="slide1" class="carousel-item relative  hero "
-                style="background-image: url('./images/team.png');">
-    
-               <div class="hero-content text-center text-neutral-content">
-                   <div class="max-w-md">
-                       <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your 
-                           <br> doorstep</h2>
-                       <p>We supply highly quality organic products</p>
-                       <button class="btn bg-nav-color text-white">Shop Now</button>
-                   </div>
-               </div>
+                <div id="slide3" class="carousel-item relative  hero "
+                    style="background-image: url('./images/team.png');">
+
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-md">
+                            <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your
+                                <br> doorstep
+                            </h2>
+                            <p>We supply highly quality organic products</p>
+                            <button class="btn bg-nav-color text-white">Explore</button>
+                        </div>
+                    </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <a href="#slide4" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-    
+
                 <!-- slide 4 -->
-                <div id="slide1" class="carousel-item relative  hero "
-                style="background-image: url('./images/team.png');">
-    
-               <div class="hero-content text-center text-neutral-content">
-                   <div class="max-w-md">
-                       <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your 
-                           <br> doorstep</h2>
-                       <p>We supply highly quality organic products</p>
-                       <button class="btn bg-nav-color text-white">Shop Now</button>
-                   </div>
-               </div>
-    
+                <div id="slide4" class="carousel-item relative  hero "
+                    style="background-image: url('./images/team.png');">
+
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-md">
+                            <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your
+                                <br> doorstep
+                            </h2>
+                            <p>We supply highly quality organic products</p>
+                            <button class="btn bg-nav-color text-white">More...</button>
+                        </div>
+                    </div>
+
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" class="btn btn-circle">❮</a>
                         <a href="#slide1" class="btn btn-circle">❯</a>
@@ -158,16 +168,48 @@
             </div>
 
             <!-- overlap -->
-        </div>
+            <div class="-mt-20 ml-36 items-center text-center drop-shadow-lg bg-white p-5 w-4/5">
+                <div class="flex justify-evenly">
+                    <div class="text-center">
+                        <img src="./images/fruit1.png" alt="">
+                        <p>Grape</p>
+                    </div>
+    
+                    <div class="text-center">
+                        <img src="./images/fruit2.png" alt="">
+                        <p>Orange</p>
+                    </div>
+    
+                    <div class="text-center">
+                        <img src="./images/fruit3.png" alt="">
+                        <p>Mango</p>
+                    </div>
+    
+                    <div class="text-center">
+                        <img src="./images/fruit4.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+    
+                    <div class="text-center">
+                        <img src="./images/fruit5.png" alt="">
+                        <p>Pomegranate</p>
+                    </div>
+                </div>
 
+
+
+                
+                
+            </div>
+        </div>
     </header>
 
 
     <main class="md:container md:mx-auto p-15">
 
-        
-        <section >
-            
+
+        <section>
+
         </section>
 
 
@@ -184,12 +226,12 @@
 
 
 
-       
-    
 
-    
 
-       
+
+
+
+
 
 
         <!-- latest bike -->
