@@ -16,7 +16,6 @@
     <title>fruit-burst-with-tailwind-daisyUI</title>
 
     <style>
-        
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
@@ -37,6 +36,13 @@
         [type=search]:not(:placeholder-shown) {
             background-image: none;
         }
+
+        /* .my_bg {
+            background-image: radial-gradient(
+              rgba(4, 4, 4, 0.896),
+              rgba(250, 250, 247, 0.75)), url('./images/team.png');
+            text-align: center;
+        } */
     </style>
 
     <!-- tailwind custom data -->
@@ -56,10 +62,10 @@
 
 <body class="font-poppins">
     <header class="md:container md:mx-auto p-10 md:px-20 md:py-10">
-        <nav >
+        <nav>
             <div class="flex-row-reverse md:flex-row navbar bg-base-100 md:bg-nav-color md:text-white 
             md:rounded-full mb-8 mt-15 justify-between">
-            
+
                 <div>
                     <div class="dropdown md:w-auto">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -86,40 +92,58 @@
                         <li><a>All Fruits</a></li>
                     </ul>
                 </div>
-    
+
                 <div class="-ml-72 md:ml-auto navbar-start md:navbar-center">
                     <img src="./images/logo.png" alt="">
                     <a class="btn btn-ghost normal-case text-2xl md:text-4xl font-bold">Fruit Burst</a>
                 </div>
-    
+
                 <div class="invisible md:visible md:navbar-end">
                     <div class="form-control">
-                        <input type="search"  placeholder="Search"
-                               class="rounded-full input input-bordered w-24 md:w-auto lg:w-96" />
+                        <input type="search" placeholder="Search"
+                            class="rounded-full input input-bordered w-24 md:w-auto lg:w-96" />
                     </div>
-    
+
                 </div>
             </div>
         </nav>
 
-        
+
         <!-- cover photo -->
+        <!-- <div class="card w-96 bg-base-100 shadow-xl image-full">
+            <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div> -->
         <div>
-            <!-- slider or carousel)-->
+            <!-- slider or carousel shadow problem pending-->
             <div class="carousel w-full md:h-[550px] bg-bike-bg">
                 <!-- slide 1 -->
-                <div id="slide1" class="carousel-item relative hero brightness-75"
-                    style="background-image: url('./images/team.png');">
 
-                    <div class="hero-content text-center text-neutral-content">
-                        <div class="max-w-md">
-                            <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your
-                                <br> doorstep
-                            </h2>
-                            <p>We supply highly quality organic products</p>
-                            <button class="btn bg-nav-color text-white">Shop Now</button>
+                <div id="slide1" class="my_bg carousel-item relative hero brightness-75"
+                    style="background-image: url('./images/team.png'); ">
+                    <!-- bg-gradient-to-r from-[#121212] to-slate-100 backdrop-brightness-150 
+                    backdrop-opacity-60 backdrop-invert-0 bg-black/30-->
+
+                    <div class=" text-white">
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md ">
+                                <h2 class="text-3xl md:text-6xl font-bold mb-2 text-white">Exotic tastes at your
+                                    <br> doorstep
+                                </h2>
+                                <p class="mb-2 text-lg  text-white">We supply highly quality organic products</p>
+                                <button class="btn bg-nav-color text-white border-transparent">Shop Now</button>
+                            </div>
                         </div>
                     </div>
+
+
+
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
@@ -127,16 +151,16 @@
                 </div>
 
                 <!-- slide 2 -->
-                <div id="slide2" class="carousel-item relative  hero "
+                <div id="slide2" class="carousel-item relative hero brightness-75 "
                     style="background-image: url('./images/team.png');">
 
                     <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-md">
-                            <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your
+                            <h2 class="text-3xl md:text-6xl font-bold mb-2">Exotic tastes at your
                                 <br> doorstep
                             </h2>
-                            <p>We supply highly quality organic products</p>
-                            <button class="btn bg-nav-color text-white">check it</button>
+                            <p class="mb-2">We supply highly quality organic products</p>
+                            <button class="btn bg-nav-color text-white border-transparent">check it</button>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -146,16 +170,16 @@
                 </div>
 
                 <!-- slide 3 -->
-                <div id="slide3" class="carousel-item relative  hero "
+                <div id="slide3" class="carousel-item relative hero brightness-75 "
                     style="background-image: url('./images/team.png');">
 
                     <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-md">
-                            <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your
+                            <h2 class="text-3xl md:text-6xl font-bold mb-2">Exotic tastes at your
                                 <br> doorstep
                             </h2>
-                            <p>We supply highly quality organic products</p>
-                            <button class="btn bg-nav-color text-white">Explore</button>
+                            <p class="mb-2">We supply highly quality organic products</p>
+                            <button class="btn bg-nav-color text-white border-transparent">Explore</button>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -165,16 +189,16 @@
                 </div>
 
                 <!-- slide 4 -->
-                <div id="slide4" class="carousel-item relative  hero "
+                <div id="slide4" class="carousel-item relative hero brightness-75"
                     style="background-image: url('./images/team.png');">
 
                     <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-md">
-                            <h2 class="text-3xl md:text-6xl font-bold">Exotic tastes at your
+                            <h2 class="text-3xl md:text-6xl font-bold mb-2">Exotic tastes at your
                                 <br> doorstep
                             </h2>
-                            <p>We supply highly quality organic products</p>
-                            <button class="btn bg-nav-color text-white">More...</button>
+                            <p class="mb-2">We supply highly quality organic products</p>
+                            <button class="btn bg-nav-color text-white border-transparent">More...</button>
                         </div>
                     </div>
 
@@ -186,7 +210,8 @@
             </div>
 
             <!-- overlap -->
-            <div class="-mt-20 ml-36 items-center text-center drop-shadow-lg bg-white p-5 w-4/5 h-64">
+            <div class="invisible md:visible -mt-20 ml-36 items-center text-center drop-shadow-lg
+                       bg-white p-5 w-4/5 h-64">
                 <div class="flex justify-evenly text-xl">
                     <div class="text-center">
                         <img src="./images/fruit1.png" alt="">
@@ -223,162 +248,158 @@
     </header>
 
 
-    <main class="md:container md:mx-auto p-15">
+    <main class="md:container md:mx-auto px-20">
 
         <!-- deal section -->
         <section>
             <!-- deal header -->
-            <div class="flex">
+            <div class="text-center md:text-start md:flex md:justify-around ">
+                <div class=" md:w-1/2 mb-10 border-zinc-900">
+                    <h2 class="text-5xl font-extrabold mb-6">Deal of the day</h2>
+                    <p class="font-medium text-zinc-500">Contrary to popular belief, is not simply random text. It has
+                        roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.
+                    </p>
+                </div>
+
+                <!-- deal cards -->
+                <div class="pl-36 md:pl-0">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:3;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
-            <!-- deal cards -->
-            <div class="flex"></div>
 
-        </section>
+            <!-- card section -->
+            <div class="text-center px-20">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- latest bike -->
-        <section class="my-24">
-            <h3 class="text-5xl mb-12 font-semibold text-center">Latest Bikes</h3>
-
-            <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                <!-- first card -->
-                <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="./images/others/latest1.png" alt="no image found" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
-                            id nisi lectus at.</p>
-                        <div class="card-actions">
-                            <button class="btn bg-bike-primary text-white uppercase">Purchase</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- second card -->
-                <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="./images/others/latest2.png" alt="no image found" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-3xl">Motorcycles & Scooters</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
-                            id nisi lectus at.</p>
-                        <div class="card-actions">
-                            <button class="btn btn-outline btn-error uppercase">Purchase</button>
+                <!-- card container-featured tea -->
+                <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    <!-- first card -->
+                    <div class="card py-8 px-2 bg-base-100 border-gray-800
+                            bg-gradient-to-t from-[#F4F4F4] to-[#ebfced] shadow-md">
+                        <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
+                        <div class="card-body justify-center">
+                            <h2 class="text-2xl font-bold mb-1">12.90$ - 18.85$</h2>
+                            <hr>
+                            <p class="font-medium m-1">Apples</p>
+                            <div class="rating rating-half justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" checked />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                              </div>
+                            <p class="text-lg font-bold text-nav-color mt-1">Details</p>
 
                         </div>
                     </div>
-                </div>
 
-                <!-- third card -->
-                <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="./images/others/latest3.png" alt="no image found" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-3xl">2021 Honda CBR500R</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
-                            id nisi lectus at.</p>
-                        <div class="card-actions">
-                            <button class="btn btn-outline btn-error uppercase">Purchase</button>
-                        </div>
+                    <!-- second card -->
+                    <div class="card py-8 px-2  bg-base-100 border-gray-800 
+                    bg-gradient-to-t from-[#F4F4F4] to-[#ebfced] shadow-md">
+                <figure><img src="./images/fruit7.png" alt="Shoes" /></figure>
+                <div class="card-body justify-center">
+                    <h2 class="text-2xl font-bold mb-1">12.90$ - 18.85$</h2>
+                    <hr>
+                    <p class="font-medium m-1">Orange</p>
+                    <div class="rating rating-half justify-center">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" checked />
+                        <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                      </div>
+                    <p class="text-lg font-bold text-nav-color mt-1">Details</p>
+
+                </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-
-
-        <!-- happy clients -->
-        <section class="my-24">
-            <h3 class="text-5xl mb-12 font-semibold text-center">Happy
-                <span class="text-bike-primary">Clients says</span>
-            </h3>
-
-            <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                <!-- first happy Clients review -->
-                <div class="card p-9 bg-base-100 border-2 border-gray-200">
-                    <figure><img class="w-40" src="./images/others/user-1.png" alt="no image to show" /></figure>
-                    <div class="card-body">
-                        <p>Slate helps you see how
-                            many more days you need
-                            to work to reach your financial
-                            goal for the month and year.</p>
-                        <div class="rating justify-center">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
-                        <div class="text-center space-y-4 mt-3">
-                            <h4 class="text-sm font-semibold text-info">Regina Miles</h4>
-                            <p>Banker</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- second happy Clients review -->
-                <div class="card p-9 bg-base-100 border-2 border-gray-200">
-                    <figure><img class="w-40" src="./images/others/user-2.png" alt="no image to show" /></figure>
-                    <div class="card-body">
-                        <p>Slate helps you see how
-                            many more days you need
-                            to work to reach your financial
-                            goal for the month and year.</p>
-                        <div class="rating justify-center">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
-                        <div class="text-center space-y-4 mt-3">
-                            <h4 class="text-sm font-semibold text-info">Regina Miles</h4>
-                            <p>Banker</p>
+                    <!-- third card -->
+                    <div class="card py-8 px-2  bg-base-100 border-gray-800 
+                                bg-gradient-to-t from-[#F4F4F4] to-[#ebfced] shadow-md">
+                        <figure><img src="./images/fruit8.png" alt="Shoes" /></figure>
+                        <div class="card-body justify-center">
+                            <h2 class="text-2xl font-bold mb-1">12.90$ - 18.85$</h2>
+                            <hr>
+                            <p class="font-medium m-1">Red Dragon</p>
+                            <div class="rating rating-half justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" checked />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                            </div>
+                            <p class="text-lg font-bold text-nav-color mt-1">Details</p>
 
                         </div>
                     </div>
-                </div>
 
-                <!-- third happy Clients review -->
-                <div class="card p-9 bg-base-100 border-2 border-gray-200">
-                    <figure><img class="w-40" src="./images/others/user-3.png" alt="no image to show" /></figure>
-                    <div class="card-body">
-                        <p>Slate helps you see how
-                            many more days you need
-                            to work to reach your financial
-                            goal for the month and year.</p>
-                        <div class="rating justify-center">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
-                        <div class="text-center space-y-4 mt-3">
-                            <h4 class="text-sm font-semibold text-info">Regina Miles</h4>
-                            <p>Banker</p>
+                    <!-- fourth card -->
+                    <div class="card py-8 px-2  bg-base-100 border-gray-800 
+                                bg-gradient-to-t from-[#F4F4F4] to-[#ebfced] shadow-md">
+                        <figure><img src="./images/fruit9.png" alt="Shoes" /></figure>
+                        <div class="card-body justify-center">
+                            <h2 class="text-2xl font-bold mb-1">12.90$ - 18.85$</h2>
+                            <hr>
+                            <p class="font-medium m-1">Banana</p>
+                            <div class="rating rating-half justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" checked />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-nav-color mask mask-star-2 mask-half-2" />
+                            </div>
+                            <p class="text-lg font-bold text-nav-color mt-1">Details</p>
 
                         </div>
                     </div>
@@ -386,75 +407,12 @@
             </div>
         </section>
 
-        <!-- faq -->
-        <section class="my-24">
-            <h3 class="text-5xl mb-12 font-semibold text-center">Frequently Asked
-                <span class="text-bike-primary">Questions</span>
-            </h3>
 
-            <div class="hero">
-                <div class="hero-content flex-col lg:flex-row gap-24">
-                    <img src="./images/others/faq.png" class="w-3/4 lg:max-w-sm rounded-lg shadow-2xl" />
-                    <div>
-                        <!-- first question -->
-                        <div class="collapse collapse-arrow border-2 border-zinc-200">
-                            <input type="radio" name="my-accordion-2" checked="checked" />
-                            <div class="collapse-title text-xl font-medium">
-                                What are the most important things I should
-                                know about riding a bike?
-                            </div>
-                            <div class="collapse-content">
-                                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
-                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
-                                    will help you be a more focused and legally compliant bike rider.
-                                </p>
-                            </div>
-                        </div>
 
-                        <!-- second question -->
-                        <div class="collapse collapse-arrow border-2 border-zinc-200 mt-2 ">
-                            <input type="radio" name="my-accordion-2" />
-                            <div class="collapse-title text-xl font-medium">
-                                How can I tell if my helmet is old and I need a new one?
-                            </div>
-                            <div class="collapse-content">
-                                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
-                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
-                                    will help you be a more focused and legally compliant bike rider.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- 3rd question -->
-                        <div class="collapse collapse-arrow border-2 border-zinc-200 mt-2">
-                            <input type="radio" name="my-accordion-2" />
-                            <div class="collapse-title text-xl font-medium">
-                                My bike has been in storage is it safe to ride?
-                            </div>
-                            <div class="collapse-content">
-                                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
-                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
-                                    will help you be a more focused and legally compliant bike rider.
-                                </p>
-                            </div>
-                        </div>
 
-                        <!-- 4th question -->
-                        <div class="collapse collapse-arrow border-2 border-zinc-200 mt-2">
-                            <input type="radio" name="my-accordion-2" />
-                            <div class="collapse-title text-xl font-medium">
-                                What rules should I follow when riding my bike?
-                            </div>
-                            <div class="collapse-content">
-                                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
-                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
-                                    will help you be a more focused and legally compliant bike rider.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+
+
 
     </main>
 
