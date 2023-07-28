@@ -240,11 +240,6 @@
                         <p>Pomegranate</p>
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </div>
     </header>
@@ -259,8 +254,7 @@
                 <div class=" md:w-1/2 mb-10 border-zinc-900">
                     <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Deal of the day</h2>
                     <p class="font-medium text-zinc-500 px-10 md:px-0">Contrary to popular belief, is not simply random
-                        text. It has
-                        roots in a piece of classical Latin
+                        text. It has roots in a piece of classical Latin
                         literature from 45 BC, making it over 2000 years old.
                     </p>
                 </div>
@@ -336,7 +330,48 @@
                                 <input type="radio" name="rating-10"
                                     class="bg-nav-color mask mask-star-2 mask-half-2" />
                             </div>
-                            <p class="text-lg font-bold text-nav-color mt-1">Details</p>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn text-nav-color mt-1 text-lg font-bold"
+                                onclick="my_modal_2.showModal()">Details</button>
+                            <dialog id="my_modal_2" class="modal">
+                                <form method="dialog" class="modal-box">
+
+                                    <div class="card py-8 px-2 bg-base-100 border-gray-800
+                            bg-gradient-to-t from-[#F4F4F4] to-[#ebfced] shadow-md">
+                                        <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
+                                        <div class="card-body justify-center">
+                                            <h2 class="text-2xl font-bold mb-1">12.90$ - 18.85$</h2>
+                                            <hr>
+                                            <p class="font-medium m-1">Apples</p>
+                                            <div class="rating rating-half justify-center">
+                                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-nav-color mask mask-star-2 mask-half-1" checked />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-nav-color mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-nav-color mask mask-star-2 mask-half-2" />
+                                            </div>
+                                        </div>
+                                        <form method="dialog" class="modal-backdrop">
+                                            <button class="bg-slate-400 border-none">close</button>
+                                        </form>
+                                </form>
+                            </dialog>
 
                         </div>
                     </div>
@@ -372,7 +407,18 @@
                                 <input type="radio" name="rating-10"
                                     class="bg-nav-color mask mask-star-2 mask-half-2" />
                             </div>
-                            <p class="text-lg font-bold text-nav-color mt-1">Details</p>
+                            <button class="btn text-nav-color mt-1 text-lg font-bold"
+                                onclick="my_modal_1.showModal()">Details</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <h3 class="font-bold text-lg">Hello!</h3>
+                                    <p class="py-4">Press ESC key or click the button below to close</p>
+                                    <div class="modal-action">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Close</button>
+                                    </div>
+                                </form>
+                            </dialog>
 
                         </div>
                     </div>
@@ -408,7 +454,18 @@
                                 <input type="radio" name="rating-10"
                                     class="bg-nav-color mask mask-star-2 mask-half-2" />
                             </div>
-                            <p class="text-lg font-bold text-nav-color mt-1">Details</p>
+                            <button class="btn text-nav-color mt-1 text-lg font-bold"
+                                onclick="my_modal_1.showModal()">Details</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <h3 class="font-bold text-lg">Hello!</h3>
+                                    <p class="py-4">Press ESC key or click the button below to close</p>
+                                    <div class="modal-action">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Close</button>
+                                    </div>
+                                </form>
+                            </dialog>
 
                         </div>
                     </div>
@@ -444,7 +501,18 @@
                                 <input type="radio" name="rating-10"
                                     class="bg-nav-color mask mask-star-2 mask-half-2" />
                             </div>
-                            <p class="text-lg font-bold text-nav-color mt-1">Details</p>
+                            <button class="btn text-nav-color mt-1 text-lg font-bold"
+                                onclick="my_modal_1.showModal()">Details</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <h3 class="font-bold text-lg">Hello!</h3>
+                                    <p class="py-4">Press ESC key or click the button below to close</p>
+                                    <div class="modal-action">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Close</button>
+                                    </div>
+                                </form>
+                            </dialog>
 
                         </div>
                     </div>
@@ -455,7 +523,55 @@
 
 
         <!-- team section -->
-        <section></section>
+        <section>
+            <div class="hero min-h-screen" style="background-image: url(./images/team.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+                        <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece
+                            of classical
+                            Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <div>
+                            <div>
+                                <img src="" alt="">
+                                <h2></h2>
+                                <p></p>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                            <div>
+                                <img src="./images/member1.png" alt="">
+                                <h2></h2>
+                                <p></p>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                            <div>
+                                <img src="./images/member2.png" alt="">
+                                <h2></h2>
+                                <p></p>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <img src="./images/member3.png" alt="">
+                                <h2></h2>
+                                <p></p>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -467,12 +583,13 @@
 
             <div class="px-64 text-center">
                 <h3 class="text-5xl font-extrabold my-6">Why Choose Us</h3>
-                <p class="font-medium text-zinc-500">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
-                   literature from 45 BC, making it over 2000 years old.</p>
+                <p class="font-medium text-zinc-500">Contrary to popular belief, is not simply random text. It has roots
+                    in a piece of classical Latin
+                    literature from 45 BC, making it over 2000 years old.</p>
             </div>
 
             <div class="flex flex-col md:flex-row justify-around items-center">
-                
+
 
                 <div class="space-y-6">
                     <div class="flex gap-4 w-80">
@@ -512,7 +629,7 @@
 
                 <div class="space-y-6">
                     <div class="flex gap-4 w-96">
-                        
+
                         <div>
                             <h4 class="text-2xl font-bold mb-2">Find the Perfect Fit</h4>
                             <hr class="mb-2 w-48">
@@ -523,7 +640,7 @@
                     </div>
 
                     <div class="flex gap-4 w-96">
-                        
+
                         <div>
                             <h4 class="text-2xl font-bold mb-2">Free Exchanges</h4>
                             <hr class="mb-2 w-48">
@@ -534,7 +651,7 @@
                     </div>
 
                     <div class="flex gap-4 w-96">
-                        
+
                         <div>
                             <h4 class="text-2xl font-bold mb-2">Contact Our Seller</h4>
                             <hr class="mb-2 w-48">
